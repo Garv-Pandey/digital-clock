@@ -1,12 +1,30 @@
-# React + Vite
+# Digital Clock - React Learning Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a simple digital clock built using React.js. The purpose of this project is to practice React fundamentals, including state management, the `useEffect` hook, and functional components.
 
-Currently, two official plugins are available:
+## Features
+- Displays the current time in HH:MM:SS AM/PM format.
+- Updates every second using `setInterval`.
+- Implements the `useState` hook to manage time state.
+- Uses the `useEffect` hook to handle side effects (updating time at an interval and cleanup on unmount).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React.js
+- JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+## Code Explanation
+The main component `DigitalClock` includes:
+- `useState` to store and update the time.
+- `useEffect` to start an interval that updates the time every second and cleans up on unmount.
+- A function `timeFormatted` to format the time with leading zeros and display the AM/PM notation.
+- A function `timeUpdate` that sets the interval for updating the time.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Learning Outcomes
+- Understanding state updates with `useState`.
+- Managing side effects using `useEffect`.
+- Formatting time using JavaScript functions.
+- Handling cleanup in React components.
+
+## Author
+This project was created for learning purposes while practicing React.js.
